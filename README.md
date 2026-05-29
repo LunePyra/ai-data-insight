@@ -98,4 +98,9 @@ df = pd.read_csv('input.csv')
 如有问题或建议，欢迎通过 GitHub Issues 联系。
 如果你觉得这个项目有用，请点亮 🌟 Star 支持一下
 
+## 📄许可
+本项目采用 MIT License 开源。
+
+
+
 
