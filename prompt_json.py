@@ -70,3 +70,4 @@ if __name__ == "__main__":
     for review in lines:
         result = extract_review_info(review)
         print(result)
+

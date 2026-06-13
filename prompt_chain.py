@@ -118,3 +118,4 @@ if __name__ == "__main__":
     interpretation = ai_interpret_cleaning_result(df, df)
     print("\n===== AI解读 =====\n")
     print(interpretation)
+    

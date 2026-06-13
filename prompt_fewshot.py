@@ -44,3 +44,4 @@ if __name__ == "__main__":
     for idx, jd in enumerate(lines, 1):
         result = classify_job_level(jd)
         print(f"{idx}. {result} → {jd}")
+        
