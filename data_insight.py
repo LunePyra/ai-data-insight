@@ -55,7 +55,7 @@ def analyze_csv_with_ai(file_path,large_mode=None):
 - 总列数：{len(df.columns)}
 
 【列名及数据类型】
-{df.dtypes.to_string()}
+{columns_info}
 
 【每列缺失值数量】
 {missing_info}
@@ -88,7 +88,7 @@ def analyze_csv_with_ai(file_path,large_mode=None):
                 "role":"user","content":prompt
             }
         ],
-        temperature=0.3#降低随机性，让输出更稳定
+            temperature=0.3#降低随机性，让输出更稳定
         )
         return response.choices[0].message.content
 
@@ -104,7 +104,7 @@ def analyze_csv_with_ai(file_path,large_mode=None):
             return f"API调用失败：{error_msg}"
 
 if __name__ == "__main__":
-    test_file = "Dataset.csv"
+    test_file = "test_data.csv"
     print("正在分析...\n")
     result = analyze_csv_with_ai(test_file)
     print("=" * 50)
