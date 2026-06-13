@@ -55,7 +55,7 @@ def analyze_csv_with_ai(file_path,large_mode=None):
 - 总列数：{len(df.columns)}
 
 【列名及数据类型】
-{df.dtypes.to_string()}
+{columns_info}
 
 【每列缺失值数量】
 {missing_info}
